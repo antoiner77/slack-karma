@@ -10,6 +10,7 @@ If you run the script on ec2, just add a role to allow access to the bucket of y
 The script need to run all the time
 
 You can use http://supervisord.org/configuration.html#program-x-section-example to run the script
+
 You need to add the bot user to every room
 
 ### How to use:
