@@ -57,7 +57,7 @@ def main_loop():
                                 continue
                             if "++" in karma[1]:
                                 to_add = len(karma[1]) - 1
-                                if to_add > 5:
+                                if len(karma[1]) >= 5:
                                     to_add = 5
                                     sc.rtm_send_message(channel, "💥 :parrot: 💥  :parrot: 💥  :parrot: 💥  ")
                                 if karma[0] in users_karma:
@@ -66,7 +66,7 @@ def main_loop():
                                     users_karma[karma[0]] = to_add
                             elif "--" in karma[1]:
                                 to_rm = len(karma[1]) - 1
-                                if to_rm > 5:
+                                if len(karma[1]) >= 5:
                                     to_rm = 5
                                     sc.rtm_send_message(channel, "💀 :parrot: 💀  :parrot: 💀  :parrot: 💀  ")
                                 if karma[0] in users_karma:
