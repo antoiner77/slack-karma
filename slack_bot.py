@@ -78,8 +78,7 @@ def main_loop():
                             s3object.put(
                                 Body=(bytes(json.dumps(users_karma).encode('UTF-8')))
                             )
-
-                time.sleep(1)
+        time.sleep(1)
     else:
         print("Connection Failed")
 
